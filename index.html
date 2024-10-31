@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en" dir="1tr">
+<head>
+    <meta charset="UTF-8">
+    <title>ATLABEST</title>
+    
+    <button type="button">
+        <a href="home.html">ATLABEST</a>
+    </button>
+    <style media="screen">
+
+        body{
+            margin: 0;
+            padding: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            background: radial-gradient(white, orange);
+        }
+        H1{
+            color: green;
+            font-weight: 900;
+        }
+        button{
+            background: #fff;
+            border-radius: 5px;
+            font-size: 1.2rem;
+            border: 1px solid green;
+        }
+        button:hover{
+            border: none;
+        }
+        a{
+            color: black;
+            text-decoration: none;
+        }
+        button a:hover{
+            background: silver;
+            color: red;
+            transition: 2s;
+        }
+        .bar{
+            height: 10px;
+            width: 250px;
+            background: linear-gradient(90deg, silver, crimson, silver);
+            border: 2px solid black;
+            border-radius: 50px;
+            position: relative;
+            animation: bar 40s alternate infinite;
+        }
+
+
+        @keyframes bar{
+            0%{
+                transform: rotateZ(0deg);
+            }
+            100%{
+                transform: rotateZ(720deg);
+            }
+        }
+
+
+        .bar .stick{
+            height: 100px;
+            width: 10px;
+            background: linear-gradient(0deg, orange, silver, orange);
+            border: 2px solid black;
+            border-radius: 50px;
+            position: absolute;
+            animation: stick 20s alternate infinite;
+        }
+        .bar .stick:nth-child(1){
+            top: -43px;
+            left: -2px;
+        }
+        .bar .stick:nth-child(2){
+            top: -43px;
+            right: -2px;
+        }
+
+        
+        @keyframes stick{
+            0%{
+                transform: rotateZ(0deg);
+            }
+            100%{
+                transform: rotateZ(720deg);
+            }
+        }
+
+        .stand{
+            height: 200px;
+            width: 15px;
+            background: linear-gradient(0deg, silver, red, silver);
+            border: 20x solid black;
+            border-radius: 50px;
+            position: absolute;
+            top: 300px; left: 730px;
+        }
+        button{
+            bottom: 0;
+        }
+
+    </style>
+    
+</head>
+<body>
+    <a href="home.html">
+        <div class="bar">
+        <div class="stick">
+            <h1>WELCOME TO</h1>
+        </div>
+        <div class="stick">
+            <h1>ATLABEST</h1>
+        </div>
+    </div>
+</a>
+    <div class="stand">
+
+    </div>
+    
+</body>
+</html>
